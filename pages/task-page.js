@@ -25,7 +25,7 @@ export default function TaskPage({ staticfilteredTasks }) {
       <ul>
         {filteredTasks &&
           filteredTasks.map((task) => (
-            <Task key={task.id} task={task} />
+            <Task key={task.id} task={task} taskDeleted={mutate} />
           ))}
       </ul>
       <Link href="/main-page">
