@@ -10,7 +10,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json())
 export default function Post({ staticTask, id }) {
   const router = useRouter()
   const { data: task, mutate } = useSWR(
-    `${process.env.NEXT_PUBLIC_RETAPI_URL}api/detail-task/${id}`,
+    `${process.env.NEXT_PUBLIC_RESTAPI_URL}api/detail-task/${id}`,
     fetcher,
     {
       initialData: staticTask,
@@ -25,7 +25,7 @@ export default function Post({ staticTask, id }) {
 
   return (
     <Layout title={task.title}>
-      <span className="" mb-4>
+      <span className="mb-4">
         {'ID : '}
         {task.id}
       </span>
