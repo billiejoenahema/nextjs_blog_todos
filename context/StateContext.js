@@ -8,7 +8,7 @@ export default function StateContextProvider(props) {
     <StateContext.Provider
       value={{
         selectedTask,
-        setSlelectedTask,
+        setSelectedTask,
       }}>
       {props.children}
     </StateContext.Provider>
