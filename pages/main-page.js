@@ -29,10 +29,11 @@ export default function MainPage() {
       <svg
         onClick={logout}
         xmlns="http://www.w3.org/2000/svg"
-        className="mt-10 cursor-pointer h-6 w-6"
+        className="mt-10 cursor-pointer h-8 w-8 hover:opacity-80"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
+        title="ログアウト"
       >
         <path
           strokeLinecap="round"
